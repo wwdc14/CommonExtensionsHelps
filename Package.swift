@@ -21,6 +21,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "CommonExtensionsHelps",
-                path: "CommonExtensionsHelps/Sources")
+                path: "CommonExtensionsHelps/Source")
     ]
 )
