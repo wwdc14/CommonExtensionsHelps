@@ -5,11 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "CommonExtensionsHelps",
+    platforms: [
+        .iOS(.v11)
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "CommonExtensionsHelps",
-            targets: ["CommonExtensionsHelps"]),
+            name: "CommonExtensionsHelps", targets: ["CommonExtensionsHelps"]),
     ],
     dependencies: [
         .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "14.0.0")),
@@ -21,6 +23,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "CommonExtensionsHelps",
-                path: "CommonExtensionsHelps/Source")
+                path: "CommonExtensionsHelps/Source",
+                dependencies: ["Moya", "SnapKit", "MBProgressHUD", "RxSwift", "Kingfisher", "SwiftyJSON"])
     ]
 )
