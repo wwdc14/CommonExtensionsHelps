@@ -23,7 +23,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "CommonExtensionsHelps",
-                path: "CommonExtensionsHelps/Source",
-                dependencies: ["Moya", "SnapKit", "MBProgressHUD", "RxSwift", "Kingfisher", "SwiftyJSON"])
+                dependencies: ["Moya", "SnapKit", "MBProgressHUD", "RxSwift", "Kingfisher", "SwiftyJSON"],
+                path: "CommonExtensionsHelps/Source")
     ]
 )
