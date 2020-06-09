@@ -22,7 +22,6 @@
 		045BD645248E3F870098D07D /* KingfisherSwiftUIDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 045BD644248E3F870098D07D /* KingfisherSwiftUIDynamic */; };
 		045BD646248E3F870098D07D /* KingfisherSwiftUIDynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 045BD644248E3F870098D07D /* KingfisherSwiftUIDynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		045BD648248E3F870098D07D /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 045BD647248E3F870098D07D /* KingfisherSwiftUI */; };
-		045BD64C248E40090098D07D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 045BD64B248E40090098D07D /* SwiftyJSON */; };
 		045BD64F248E44420098D07D /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 045BD64E248E44420098D07D /* Moya */; };
 		045BD651248E44420098D07D /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 045BD650248E44420098D07D /* RxMoya */; };
 		045BD683248E446C0098D07D /* AuthorityManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BD654248E446B0098D07D /* AuthorityManage.swift */; };
@@ -96,7 +95,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				045BD651248E44420098D07D /* RxMoya in Frameworks */,
-				045BD64C248E40090098D07D /* SwiftyJSON in Frameworks */,
 				045BD633248E37B90098D07D /* RxSwift in Frameworks */,
 				045BD639248E37B90098D07D /* RxBlocking in Frameworks */,
 				045BD63C248E3F870098D07D /* KingfisherStatic in Frameworks */,
@@ -253,7 +251,6 @@
 				045BD642248E3F870098D07D /* Kingfisher */,
 				045BD644248E3F870098D07D /* KingfisherSwiftUIDynamic */,
 				045BD647248E3F870098D07D /* KingfisherSwiftUI */,
-				045BD64B248E40090098D07D /* SwiftyJSON */,
 				045BD64E248E44420098D07D /* Moya */,
 				045BD650248E44420098D07D /* RxMoya */,
 			);
@@ -289,7 +286,6 @@
 				045BD623248E2F720098D07D /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				045BD631248E37B90098D07D /* XCRemoteSwiftPackageReference "RxSwift" */,
 				045BD63A248E3F870098D07D /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				045BD64A248E40080098D07D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				045BD64D248E44420098D07D /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 045BD607248E21400098D07D /* Products */;
@@ -567,14 +563,6 @@
 				minimumVersion = 5.14.0;
 			};
 		};
-		045BD64A248E40080098D07D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		045BD64D248E44420098D07D /* XCRemoteSwiftPackageReference "Moya" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Moya/Moya.git";
@@ -645,11 +633,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 045BD63A248E3F870098D07D /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
-		};
-		045BD64B248E40090098D07D /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 045BD64A248E40080098D07D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
 		};
 		045BD64E248E44420098D07D /* Moya */ = {
 			isa = XCSwiftPackageProductDependency;
