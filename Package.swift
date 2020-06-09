@@ -17,7 +17,7 @@ let package = Package(
         .package(url: "https://gitee.com/WWDC14/Moya.git", .upToNextMajor(from: "14.0.0")),
         .package(url: "https://gitee.com/WWDC14/SnapKit.git", .upToNextMajor(from: "5.0.1")),
         .package(url: "https://gitee.com/WWDC14/MBProgressHUD.git", .upToNextMajor(from: "1.2.0")),
-        .package(url: "https://gitee.com/WWDC14/RxSwift.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://gitee.com/WWDC14/RxSwift.git", .upToNextMajor(from: "5.1.1")),
         .package(url: "https://gitee.com/WWDC14/Kingfisher.git", .upToNextMajor(from: "5.14.0")),
         .package(url: "https://gitee.com/WWDC14/SwiftyJSON.git", .upToNextMajor(from: "5.0.0")),
     ],
