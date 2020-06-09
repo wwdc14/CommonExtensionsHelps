@@ -14,12 +14,12 @@ let package = Package(
             name: "CommonExtensionsHelps", targets: ["CommonExtensionsHelps"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Moya/Moya.git", .upToNextMajor(from: "14.0.0")),
-        .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1")),
-        .package(url: "https://github.com/jdg/MBProgressHUD.git", .upToNextMajor(from: "1.2.0")),
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/onevcat/Kingfisher.git", .upToNextMajor(from: "5.14.0")),
-        .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://gitee.com/WWDC14/Moya.git", .upToNextMajor(from: "14.0.0")),
+        .package(url: "https://gitee.com/WWDC14/SnapKit.git", .upToNextMajor(from: "5.0.1")),
+        .package(url: "https://gitee.com/WWDC14/MBProgressHUD.git", .upToNextMajor(from: "1.2.0")),
+        .package(url: "https://gitee.com/WWDC14/RxSwift.git", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://gitee.com/WWDC14/Kingfisher.git", .upToNextMajor(from: "5.14.0")),
+        .package(url: "https://gitee.com/WWDC14/SwiftyJSON.git", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .target(name: "CommonExtensionsHelps",
