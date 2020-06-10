@@ -1,7 +1,5 @@
-import UIKit
 import RxSwift
 import RxCocoa
-import ObjectiveC
 private struct AssociatedKeys {
     static var p_state_key = "com.CommonExtensionsHelps.p_state_key"
     static var p_loading_key = "com.CommonExtensionsHelps.p_loading_key"

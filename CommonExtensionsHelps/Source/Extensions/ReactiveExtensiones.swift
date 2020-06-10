@@ -9,7 +9,6 @@
 import SwiftyJSON
 import RxSwift
 import RxCocoa
-import UIKit
 import Moya
 
 extension Reactive where Base: UIViewController {

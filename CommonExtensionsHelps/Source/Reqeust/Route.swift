@@ -7,7 +7,6 @@
 //
 
 import Moya
-import Foundation
 
 /// `Route` has HTTP method and URL path.
 ///

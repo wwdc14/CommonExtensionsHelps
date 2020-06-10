@@ -6,7 +6,6 @@
 //  Copyright © 2020 Hy. All rights reserved.
 //
 
-import Foundation
 import Alamofire
 import Moya
 

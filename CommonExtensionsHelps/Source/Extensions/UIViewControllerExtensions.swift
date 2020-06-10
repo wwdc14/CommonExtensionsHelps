@@ -19,7 +19,7 @@ extension UIViewController {
         }
     }
     
-    var hudView: MBProgressHUD {
+    public var hud: MBProgressHUD {
         let _mbpro: MBProgressHUD
         if let mbpro = MBProgressHUD.forView(_window) {
             _mbpro = mbpro

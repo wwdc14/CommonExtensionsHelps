@@ -8,40 +8,39 @@
 
 import Moya
 import SwiftyJSON
-import Foundation
 
 public extension Response {
     
-    func mapperSuccessfulValue<R: ServiceSuccessVerification>(_ value: R) throws -> JSON {
-        
-        do {
-            let json = try mapperJSON()
+    func mapperSuccessfulValue<R: ServiceSuccessVerification>(_ value: R) -> Result<JSON, Error> {
+        let result = mapperJSON()
+        switch result {
+        case .success(let json):
             let statusCode = json[value.statusKey].intValue
             if value.statusCodes.contains(statusCode) {
-                return json[value.contentKey]
+                return .success(json[value.contentKey])
             } else {
                 if let errorMessage = json[value.messageKey].string {
-                    throw ServiceError.serverApi(errorMessage)
+                    return .failure(ServiceError.serverApi(errorMessage))
                 } else {
-                    return json
+                    return .success(json)
                 }
             }
-        } catch {
-            throw ServiceError.mapper(error.localizedDescription)
+        case .failure(let error):
+            return .failure(ServiceError.mapper(error.localizedDescription))
         }
         
     }
     
-    func mapperJSON(atKeyPath keyPath: String? = nil, options: JSONSerialization.ReadingOptions = .allowFragments ) throws -> JSON {
+    func mapperJSON(atKeyPath keyPath: String? = nil, options: JSONSerialization.ReadingOptions = .allowFragments ) -> Result<JSON, Error> {
         do {
             let json = try JSON.init(data: data, options: options)
             if let keyPath = keyPath {
-                return json[keyPath]
+                return .success(json[keyPath])
             } else {
-                return json
+                return .success(json)
             }
         } catch {
-            throw ServiceError.mapper(error.localizedDescription)
+            return .failure(ServiceError.mapper(error.localizedDescription))
         }
     }
     

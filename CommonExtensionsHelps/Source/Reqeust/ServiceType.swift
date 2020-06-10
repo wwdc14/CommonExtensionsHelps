@@ -6,7 +6,6 @@
 //  Copyright © 2020 Hy. All rights reserved.
 //
 import Moya
-import Foundation
 
 public protocol ServiceType: TargetType {
     var url: URL { get }

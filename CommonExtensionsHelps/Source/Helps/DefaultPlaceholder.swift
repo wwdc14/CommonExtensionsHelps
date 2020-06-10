@@ -10,9 +10,9 @@ import UIKit
 import SnapKit
 
 open class DefaultPlaceholder: UIView {
-    typealias CustomizeClosure = (DefaultPlaceholder.Context, PlaceholderState) -> Void
-    typealias RetryClosure = (DefaultPlaceholder.Context ,Placeholdersble) -> Void
-    typealias OtherClosure = RetryClosure
+    public typealias CustomizeClosure = (DefaultPlaceholder.Context, PlaceholderState) -> Void
+    public typealias RetryClosure = (DefaultPlaceholder.Context ,Placeholdersble) -> Void
+    public typealias OtherClosure = RetryClosure
     
 /// public propertys
     public var isLoading: Bool = false
@@ -48,15 +48,15 @@ open class DefaultPlaceholder: UIView {
         initialize()
     }
     
-    func customize(_ Closure: @escaping CustomizeClosure) {
+    public func customize(_ Closure: @escaping CustomizeClosure) {
         self.customizeClosure = Closure
     }
     
-    func retry(_ Closure: @escaping RetryClosure) {
+    public func retry(_ Closure: @escaping RetryClosure) {
         retryClosure = Closure
     }
     
-    func otherClosure(_ Closure: @escaping OtherClosure) {
+    public func otherClosure(_ Closure: @escaping OtherClosure) {
         otherClosure = Closure
     }
     
@@ -112,7 +112,7 @@ open class DefaultPlaceholder: UIView {
         }
     }
     
-    private func show() {
+    public func show() {
         if self.isHidden {
             self.isHidden = false
         }
@@ -121,7 +121,7 @@ open class DefaultPlaceholder: UIView {
         }
     }
     
-    private func hide() {
+    public func hide() {
         UIView.animate(withDuration: 0.25, animations: {
             self.alpha = 0
         }) { _ in
@@ -170,7 +170,7 @@ extension DefaultPlaceholder: Placeholdersble {
 }
 
 extension DefaultPlaceholder {
-    struct Context {
+    public struct Context {
         public let indicatorView: InstagramActivityIndicator
         public let imageView: UIImageView
         public let titleLabel: UILabel
@@ -179,7 +179,7 @@ extension DefaultPlaceholder {
     }
     
     public class TryButton: UIControl {
-        let label: UILabel = .init()
+        public let label: UILabel = .init()
         init() {
             super.init(frame: .zero)
             initialize()

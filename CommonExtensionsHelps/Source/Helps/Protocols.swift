@@ -6,7 +6,6 @@
 //  Copyright © 2020 Hy. All rights reserved.
 //
 
-import UIKit
 import RxSwift
 import RxCocoa
 
