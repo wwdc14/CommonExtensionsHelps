@@ -1,4 +1,5 @@
 import Moya
+import Foundation
 
 open class ServiceAPI: ServiceType {
     
