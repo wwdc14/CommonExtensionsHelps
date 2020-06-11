@@ -1,3 +1,4 @@
+import Foundation
 import SwiftyJSON
 import RxSwift
 import RxCocoa

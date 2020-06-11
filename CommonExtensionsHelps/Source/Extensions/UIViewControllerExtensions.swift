@@ -6,6 +6,7 @@
 //  Copyright © 2020 Hy. All rights reserved.
 //
 
+import UIKit
 import MBProgressHUD
 
 extension UIViewController {
