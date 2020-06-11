@@ -1,4 +1,6 @@
 import Moya
+import Foundation
+
 public protocol ModuleType {
     var path: String { get }
     var part: PartType { get }

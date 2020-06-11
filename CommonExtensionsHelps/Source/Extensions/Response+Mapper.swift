@@ -8,6 +8,7 @@
 
 import Moya
 import SwiftyJSON
+import Foundation
 
 public extension Response {
     
